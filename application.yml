@@ -1,17 +1,10 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/rentDB?createDatabaseIfNotExist=true
+    url: jdbc:postgresql://localhost:5432/rentDB
     username: postgres
     password: qwer
     driver-class-name: org.postgresql.Driver
   jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-        temp:
-          use_jdbc_metadata_defaults: false
-    show-sql: true
     hibernate:
-      ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
