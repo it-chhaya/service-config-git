@@ -1,2 +1,3 @@
-server:
-  port: 9191
+service:
+  name: git-name
+  description: testing project
